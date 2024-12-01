@@ -1,0 +1,28 @@
+{
+  "name": "ruzz",
+  "version": "1.0.0",
+  "description": "new blazingly fast package manager",
+  "main": "index.ts",
+  "bin": {
+    "start": "./bin/index.ts"
+  },
+  "scripts": {
+    "test": "npm run dev",
+    "dev": "nodemon bin/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^22.10.1",
+    "@types/yargs": "^17.0.33",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "chalk": "^5.3.0",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "yargs": "^17.7.2"
+  }
+}
