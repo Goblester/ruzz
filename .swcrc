@@ -1,0 +1,18 @@
+{
+  "exclude": "node_modules/",
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "topLevelAwait": true
+    },
+    "target": "esnext",
+    "baseUrl": ".",
+    "experimental": {
+      "plugins": []
+    }
+  },
+  "module": {
+    "type": "nodenext"
+  }
+}
+

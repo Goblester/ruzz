@@ -1,8 +1,21 @@
 {
-  "extends": "@tsconfig/node20/tsconfig.json",
   "compilerOptions": {
-    "preserveConstEnums": true
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "target": "ESNext",
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "outDir": "dist",
+    "lib": [ "esnext" ],
+    "types": [ "node" ],
+    "baseUrl": "./",
   },
-  "include": ["src/**/*"],
-  "exclude": ["**/*.spec.ts"]
+  "exclude": [ "node_modules" ],
+  "include": [
+    "src/**/*.ts",
+    "bin/*.ts"
+  ]
 }

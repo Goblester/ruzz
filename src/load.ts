@@ -1,9 +1,9 @@
 #! /usr/bin/env node
-const yargs = require('yargs');
+import yargs from 'yargs';
 
-const usage = "\nUsage: tran <lang_name> sentence to be translated";
+const usage = "load all dependencies of yours!!!";
 
-const options = yargs
+const options = yargs(process.argv)
       .usage(usage)
       .option("l", {
         alias:"languages",
@@ -16,4 +16,5 @@ const options = yargs
 
 
 
-console.log(yargs.argv);
+console.log(options);
+console.log('adsfasdf')
